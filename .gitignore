@@ -1,0 +1,48 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- 环境与密钥 ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- 构建产物 ---
+build/
+build_*/
+*.o
+*.a
+*.so
+*.so.*
+deps/
+
+# --- 数据与大文件 ---
+data/raw/
+*.csv.gz
+*.jsonl.gz
+*.parquet
+*.db
+*.sqlite3
+*.sst
+*.log
+
+# --- 输出与临时 ---
+bench/*.tmp
+results/*.tmp
+logs/
+*.log
+.DS_Store
+Thumbs.db
+
+# --- IDE ---
+.idea/
+.vscode/
+*.swp
